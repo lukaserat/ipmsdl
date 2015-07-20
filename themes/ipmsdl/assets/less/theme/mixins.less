@@ -1,0 +1,12 @@
+@import url('../../../assets/vendor/bootstrap/less/mixins');
+
+//
+// Mixins file
+//
+// Space for any custom mixins used by this application
+//
+.responsive(@maxWidth; @rules) {
+  @media only screen and (max-width: @maxWidth) {
+    @rules();
+  }
+}

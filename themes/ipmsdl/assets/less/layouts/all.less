@@ -1,0 +1,127 @@
+//
+// Layouts
+//
+// Styles specific to different page layouts.
+//
+
+// Used by the fixed navigation
+header#layout-header {
+
+    .navbar-brand {
+        padding-left: 50px;
+        background: url('../images/october.png') no-repeat 7px 50%;
+        background-size: auto 80%;
+    }
+
+    .site-navbar {
+        background: #222222;
+        a {
+            color: #f6f6f6;
+        }
+        nav {
+            float: right;
+            display: block;
+            .nav > li > a {
+                &:hover, &:focus {
+                    color: red;
+                }
+            }
+        }
+        .nav.navbar-nav {
+            li.active {
+                a {
+                    background: #eeeeee;
+                    color: red;
+                }
+            }
+        }
+        .full {
+            display: none;
+        }
+        .responsive(1200px,{
+            .full {
+                display: block;
+            }
+            .acronym {
+                display: none;
+            }
+            nav {
+                float: none;
+            }
+        });
+
+        .responsive(1024px,{
+            nav {
+                display: none;
+            }
+        });
+
+        .responsive(644px,{
+            .navbar-brand {
+                display: block;
+                margin-bottom: 16px;
+            }
+        });
+
+        .responsive(396px,{
+            .full {
+                display: none;
+            }
+            .acronym {
+                display: block;
+            }
+            .navbar-brand {
+                display: block;
+                margin-bottom: 0px;
+            }
+        });
+    }
+
+    .mean-container {
+        .mean-bar, .mean-nav {
+            background: lighten(#222222, 10%);
+        }
+    }
+
+    .top-header {
+        a:hover {
+            text-decoration: none;
+        }
+        background: #f6f6f6;
+        ul.header-list {
+            padding: 0;
+            margin: 0;
+            a {
+                color: #aaaaaa;
+            }
+            li {
+                float: left;
+                padding: 10px 15px;
+                display: block;
+                font-size: 12px;
+                border-left: 1px solid rgba(0, 0, 0, 0.1);
+                color: #aaaaaa;
+                &:last-child {
+                    border-right: 1px solid rgba(0, 0, 0, 0.1);
+                }
+                i {
+                    margin-right: 7px;
+                }
+            }
+        }
+        .header-social {
+            text-align: right;
+
+            a {
+                display: inline-block;
+                padding: 14px 4px;
+                font-size: 12px;
+                color: #777777;
+            }
+        }
+    }
+}
+
+#contact-form {
+
+}

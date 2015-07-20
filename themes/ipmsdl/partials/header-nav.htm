@@ -1,0 +1,55 @@
+<div id="top-header" class="top-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-11 left-header">
+                <ul class="header-list">
+                    <li><i class="fa fa-phone"></i>(+632)-927-7062</li>
+                    <li><i class="fa fa-envelope"></i> <a href="index.html#">charity@youremail.com</a></li>
+                    <li><i class="fa fa-map-marker"></i> <a target="_blank" href="https://www.google.com.ph/maps/place/IBON+Foundation,+Inc./@14.633432,121.041092,17z/data=!4m2!3m1!1s0x3397b7ae2491d261:0x5069062ba2e118ef?hl=en">2F, IBON Center, 114 Timog Avenue, Sacred Heart Barangay, Quezon City 1103</a></li>
+                </ul>
+            </div>
+            <div class="col-md-1">
+                <div class="header-social">
+                    <a target="_blank" href="https://www.facebook.com/IPMSDL" class="fa fa-facebook"></a>
+                    <a target="_blank" href="https://twitter.com/ipmsdl" class="fa fa-twitter"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="site-navbar" role="navigation">
+    <div class="container">
+        <div class="clearfix">
+            <a class="navbar-brand" href="{{ 'home'|page }}">
+                <span class="acronym">IPMSDL</span>
+                <span class="full">Indigenous Peoples Movement for Self Determination and Liberation</span>
+            </a>
+            <nav>
+                <ul class="nav navbar-nav">
+                    <li class="{% if this.page.id == 'about-us' %}active{% endif %}">
+                        <a href="{{ 'about-us'|page }}">About Us</a>
+                    </li>
+                    <li class="{% if this.page.id == 'campaigns-and-petitions' %}active{% endif %}">
+                        <a href="{{ 'campaigns-and-petitions'|page }}">Campaigns &amp; Petitions</a>
+                    </li>
+                    <li class="{% if this.page.id == 'declarations' %}active{% endif %}">
+                        <a href="{{ 'declarations'|page }}">Declarations</a>
+                    </li>
+                    <li class="{% if this.page.id == 'gallery' %}active{% endif %}">
+                        <a href="{{ 'gallery'|page }}">Gallery</a>
+                    </li>
+                    <li class="{% if this.page.id == 'resources' %}active{% endif %}">
+                        <a href="{{ 'resources'|page }}">Resources</a>
+                    </li>
+                    <li class="{% if this.page.id == 'statements-and-press-releases' %}active{% endif %}">
+                        <a href="{{ 'statements-and-press-releases'|page }}">Statements And Press Releases</a>
+                    </li>
+                    <li class="{% if this.page.id == 'call-for-volunteers' %}active{% endif %}">
+                        <a href="{{ 'call-for-volunteers'|page }}">Call For Volunteers</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</nav>
+<div id="responsinve-menu"></div>
